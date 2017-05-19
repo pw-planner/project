@@ -1,0 +1,46 @@
+# FreeMind map "PW Planner"
+
+    task logout_action_event "Logout Action Event" {
+        effort 3d
+        allocate andreysaksonov
+        priority 300
+    }
+
+    task users_list "Users List" {
+        effort 2d
+        allocate andreysaksonov
+    }
+
+    task projects_list "Projects List" {
+        effort 2d
+        allocate andreysaksonov
+    }
+
+    task tasks_list "Tasks List" {
+        effort 2d
+        allocate andreysaksonov
+    }
+
+    task login_page "Login Page" {
+        effort 2d
+        allocate andreysaksonov
+        priority 200
+    }
+
+    task logout_action "Logout Action" {
+        effort 2d
+        allocate andreysaksonov
+        priority 400
+    }
+
+    task task_entity "Task Entity" {
+        effort 3d
+        allocate andreysaksonov
+        priority 600
+    }
+
+    task project_entity "Project Entity" {
+        effort 1d
+        allocate andreysaksonov
+        priority 600
+    }

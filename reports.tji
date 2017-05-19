@@ -1,0 +1,4 @@
+taskreport "Все задачи" { 
+  formats html 
+  columns no, name, resources, start, end, chart 
+}

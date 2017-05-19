@@ -1,0 +1,8 @@
+# FreeMind
+.*.png
+
+# TaskJuggler
+css/**
+icons/**
+scripts/**
+*.html
