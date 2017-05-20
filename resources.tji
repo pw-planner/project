@@ -1,4 +1,4 @@
-# FreeMind map "PW Planner"
+# Freeplane map "PW Planner"
 
 resource andreysaksonov "Andrey Saksonov" {
     limits { dailymax 1h weeklymax 6h }

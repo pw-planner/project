@@ -1,10 +1,14 @@
-# FreeMind map "PW Planner"
+# Freeplane map "PW Planner"
+
+task mq_tasks "MQ" {
 
     task logout_action_event "Logout Action Event" {
         effort 3d
         allocate andreysaksonov
-        priority 300
     }
+}
+
+task ui_tasks "UI" {
 
     task users_list "Users List" {
         effort 2d
@@ -24,23 +28,23 @@
     task login_page "Login Page" {
         effort 2d
         allocate andreysaksonov
-        priority 200
     }
 
     task logout_action "Logout Action" {
         effort 2d
         allocate andreysaksonov
-        priority 400
     }
+}
+
+task ws_tasks "WS" {
 
     task task_entity "Task Entity" {
         effort 3d
         allocate andreysaksonov
-        priority 600
     }
 
     task project_entity "Project Entity" {
         effort 1d
         allocate andreysaksonov
-        priority 600
     }
+}
