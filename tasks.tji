@@ -20,11 +20,6 @@ task ui_tasks "UI" {
         allocate andreysaksonov
     }
 
-    task tasks_list "Tasks List" {
-        effort 2d
-        allocate andreysaksonov
-    }
-
     task login_page "Login Page" {
         effort 2d
         allocate andreysaksonov
@@ -38,13 +33,19 @@ task ui_tasks "UI" {
 
 task ws_tasks "WS" {
 
-    task task_entity "Task Entity" {
-        effort 3d
-        allocate andreysaksonov
+    task ws_api "API" {
+
+        task project_entity "Project Entity" {
+            effort 1d
+            allocate andreysaksonov
+        }
+
+        task user_entity "User Entity" {
+            effort 1d
+            allocate andreysaksonov
+        }
     }
 
-    task project_entity "Project Entity" {
-        effort 1d
-        allocate andreysaksonov
+    task ws_jobs "Jobs" {
     }
 }

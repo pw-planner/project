@@ -4,7 +4,7 @@
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle">
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -96,7 +96,7 @@
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 </node>
 </node>
-<node TEXT="UI" FOLDED="true" ID="ID_655846653" CREATED="1494871158122" MODIFIED="1495263195893" COLOR="#00b439">
+<node TEXT="UI" ID="ID_655846653" CREATED="1494871158122" MODIFIED="1495263195893" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" WIDTH="thin"/>
 <attribute NAME="task" VALUE="ui_tasks"/>
@@ -109,12 +109,6 @@
 <node TEXT="Projects List" ID="ID_447801964" CREATED="1494871435081" MODIFIED="1494922463207" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="projects_list"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-</node>
-<node TEXT="Tasks List" ID="ID_189257622" CREATED="1494871366969" MODIFIED="1494922484502" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="tasks_list"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 </node>
@@ -131,21 +125,26 @@
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 </node>
 </node>
-<node TEXT="WS" FOLDED="true" ID="ID_387712182" CREATED="1494871165835" MODIFIED="1495263205027" COLOR="#00b439">
+<node TEXT="WS" ID="ID_387712182" CREATED="1494871165835" MODIFIED="1495263205027" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" WIDTH="thin"/>
 <attribute NAME="task" VALUE="ws_tasks"/>
-<node TEXT="Task Entity" ID="ID_1195759621" CREATED="1494871551124" MODIFIED="1494922514660" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="task_entity"/>
-<attribute NAME="effort" VALUE="3d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-</node>
-<node TEXT="Project Entity" ID="ID_219896986" CREATED="1494871719829" MODIFIED="1494922521995" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="API" ID="ID_1003822119" CREATED="1495540151093" MODIFIED="1495540167265">
+<attribute NAME="task" VALUE="ws_api"/>
+<node TEXT="Project Entity" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_219896986" CREATED="1494871719829" MODIFIED="1495540873643">
+<font NAME="SansSerif"/>
 <attribute NAME="task" VALUE="project_entity"/>
 <attribute NAME="effort" VALUE="1d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
+</node>
+<node TEXT="User Entity" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_132309505" CREATED="1495540108806" MODIFIED="1495540867487">
+<attribute NAME="task" VALUE="user_entity"/>
+<attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+</node>
+</node>
+<node TEXT="Jobs" ID="ID_73514992" CREATED="1495540154973" MODIFIED="1495540178577">
+<attribute NAME="task" VALUE="ws_jobs"/>
 </node>
 </node>
 </node>
