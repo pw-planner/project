@@ -100,17 +100,19 @@
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" WIDTH="thin"/>
 <attribute NAME="task" VALUE="ui_tasks"/>
-<node TEXT="Users List" ID="ID_169026157" CREATED="1494871413408" MODIFIED="1494922456368" COLOR="#990000">
+<node TEXT="Users List" ID="ID_169026157" CREATED="1494871413408" MODIFIED="1495604858100" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="users_list"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="depends" VALUE="!!ws_tasks.ws_api.user_entity"/>
 </node>
-<node TEXT="Projects List" ID="ID_447801964" CREATED="1494871435081" MODIFIED="1494922463207" COLOR="#990000">
+<node TEXT="Projects List" ID="ID_447801964" CREATED="1494871435081" MODIFIED="1495605054501" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="projects_list"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="depends" VALUE="ws_tasks.ws_api.project_entity"/>
 </node>
 <node TEXT="Login Page" ID="ID_43568668" CREATED="1494871360250" MODIFIED="1494922496957" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>

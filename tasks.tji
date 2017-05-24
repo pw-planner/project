@@ -5,6 +5,7 @@ task mq_tasks "MQ" {
     task logout_action_event "Logout Action Event" {
         effort 3d
         allocate andreysaksonov
+        depends ui_tasks.logout_action
     }
 }
 
@@ -13,16 +14,19 @@ task ui_tasks "UI" {
     task users_list "Users List" {
         effort 2d
         allocate andreysaksonov
+        depends !!ws_tasks.ws_api.user_entity
     }
 
     task projects_list "Projects List" {
         effort 2d
         allocate andreysaksonov
+        depends ws_tasks.ws_api.project_entity
     }
 
     task login_page "Login Page" {
         effort 2d
         allocate andreysaksonov
+        priority 100
     }
 
     task logout_action "Logout Action" {
