@@ -4,7 +4,7 @@
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -89,23 +89,24 @@
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" WIDTH="thin"/>
 <attribute NAME="task" VALUE="mq_tasks"/>
-<node TEXT="Logout Action Event" ID="ID_518166131" CREATED="1494871197273" MODIFIED="1494922447432" COLOR="#990000">
+<node TEXT="Logout Action Event" ID="ID_518166131" CREATED="1494871197273" MODIFIED="1495605133913" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="logout_action_event"/>
 <attribute NAME="effort" VALUE="3d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="depends" VALUE="ui_tasks.logout_action"/>
 </node>
 </node>
 <node TEXT="UI" ID="ID_655846653" CREATED="1494871158122" MODIFIED="1495263195893" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" WIDTH="thin"/>
 <attribute NAME="task" VALUE="ui_tasks"/>
-<node TEXT="Users List" ID="ID_169026157" CREATED="1494871413408" MODIFIED="1495604858100" COLOR="#990000">
+<node TEXT="Users List" ID="ID_169026157" CREATED="1494871413408" MODIFIED="1495612878361" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="users_list"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="depends" VALUE="!!ws_tasks.ws_api.user_entity"/>
+<attribute NAME="depends" VALUE="ws_tasks.ws_api.user_entity"/>
 </node>
 <node TEXT="Projects List" ID="ID_447801964" CREATED="1494871435081" MODIFIED="1495605054501" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
@@ -114,11 +115,12 @@
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="depends" VALUE="ws_tasks.ws_api.project_entity"/>
 </node>
-<node TEXT="Login Page" ID="ID_43568668" CREATED="1494871360250" MODIFIED="1494922496957" COLOR="#990000">
+<node TEXT="Login Page" ID="ID_43568668" CREATED="1494871360250" MODIFIED="1495605175894" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <attribute NAME="task" VALUE="login_page"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="priority" VALUE="100" OBJECT="org.freeplane.features.format.FormattedNumber|100"/>
 </node>
 <node TEXT="Logout Action" ID="ID_1520309831" CREATED="1494871738709" MODIFIED="1494922506201" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
@@ -147,6 +149,11 @@
 </node>
 <node TEXT="Jobs" ID="ID_73514992" CREATED="1495540154973" MODIFIED="1495540178577">
 <attribute NAME="task" VALUE="ws_jobs"/>
+<node TEXT="Log Metrics" ID="ID_1762215963" CREATED="1496089215604" MODIFIED="1496089246906">
+<attribute NAME="task" VALUE="log_metrics"/>
+<attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+</node>
 </node>
 </node>
 </node>

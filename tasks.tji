@@ -14,7 +14,7 @@ task ui_tasks "UI" {
     task users_list "Users List" {
         effort 2d
         allocate andreysaksonov
-        depends !!ws_tasks.ws_api.user_entity
+        depends ws_tasks.ws_api.user_entity
     }
 
     task projects_list "Projects List" {
@@ -51,5 +51,10 @@ task ws_tasks "WS" {
     }
 
     task ws_jobs "Jobs" {
+
+        task log_metrics "Log Metrics" {
+            effort 1d
+            allocate andreysaksonov
+        }
     }
 }
