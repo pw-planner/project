@@ -4,7 +4,7 @@
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -85,68 +85,53 @@
 <node TEXT="TASKS" POSITION="right" ID="ID_161448055" CREATED="1494871949400" MODIFIED="1494872534003" COLOR="#0033ff">
 <font NAME="SansSerif" SIZE="18"/>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
-<node TEXT="MQ" ID="ID_1516438866" CREATED="1494871146246" MODIFIED="1495263180202" COLOR="#00b439">
-<font NAME="SansSerif" SIZE="16"/>
-<edge STYLE="bezier" WIDTH="thin"/>
-<attribute NAME="task" VALUE="mq_tasks"/>
-<node TEXT="Logout Action Event" ID="ID_518166131" CREATED="1494871197273" MODIFIED="1494922447432" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="logout_action_event"/>
-<attribute NAME="effort" VALUE="3d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<node TEXT="Identity Service" ID="ID_459003274" CREATED="1496385832924" MODIFIED="1496386222342">
+<attribute NAME="task" VALUE="pw_planner_identity"/>
+<node TEXT="Login View (AngularJS)" ID="ID_548300958" CREATED="1496385936795" MODIFIED="1496386312933"/>
+<node TEXT="Logout View (AngularJS)" ID="ID_1335298630" CREATED="1496385977955" MODIFIED="1496386305164"/>
+<node TEXT="User Endpoint (Spring MVC)" ID="ID_628217358" CREATED="1496385960067" MODIFIED="1496386297981"/>
+<node TEXT="Logout Event (ActiveMQ)" ID="ID_1641180442" CREATED="1496386098764" MODIFIED="1496386282397"/>
 </node>
+<node TEXT="WWW" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
+<attribute NAME="task" VALUE="pw_planner_www"/>
+<node TEXT="Logout Handler (ActiveMQ)" ID="ID_409105012" CREATED="1496386229107" MODIFIED="1496386287757"/>
+<node TEXT="Zuul Proxy for API" ID="ID_1776364427" CREATED="1496386263348" MODIFIED="1496386333213"/>
+<node TEXT="Login Page with &quot;My Account&quot; Link" ID="ID_1687919525" CREATED="1496386335011" MODIFIED="1496386377685"/>
+<node TEXT="Internationalization" ID="ID_1174753383" CREATED="1496386378411" MODIFIED="1496386403693"/>
+<node TEXT="Authentication Support" ID="ID_704629034" CREATED="1496386409395" MODIFIED="1496386427557"/>
+<node TEXT="Resources Support" ID="ID_1689109852" CREATED="1496386428083" MODIFIED="1496386441461"/>
+<node TEXT="Projects List" ID="ID_1826110896" CREATED="1496386442595" MODIFIED="1496386461741"/>
+<node TEXT="Project Form" ID="ID_1927222109" CREATED="1496386465275" MODIFIED="1496386487180"/>
+<node TEXT="Custom Actions for Project" ID="ID_1872255384" CREATED="1496387359858" MODIFIED="1496387382196"/>
+<node TEXT="Users List" ID="ID_562692630" CREATED="1496386462330" MODIFIED="1496386464796"/>
+<node TEXT="User View" ID="ID_1393606157" CREATED="1496386475635" MODIFIED="1496386478789"/>
 </node>
-<node TEXT="UI" ID="ID_655846653" CREATED="1494871158122" MODIFIED="1495263195893" COLOR="#00b439">
-<font NAME="SansSerif" SIZE="16"/>
-<edge STYLE="bezier" WIDTH="thin"/>
-<attribute NAME="task" VALUE="ui_tasks"/>
-<node TEXT="Users List" ID="ID_169026157" CREATED="1494871413408" MODIFIED="1495604858100" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="users_list"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="depends" VALUE="!!ws_tasks.ws_api.user_entity"/>
+<node TEXT="API v1" ID="ID_709461948" CREATED="1496386692674" MODIFIED="1496386881937">
+<attribute NAME="task" VALUE="pw_planner_api_v1"/>
+<node TEXT="Resources" ID="ID_135579394" CREATED="1496386712603" MODIFIED="1496386908307">
+<node TEXT="Projects Resource" ID="ID_670880034" CREATED="1496386917778" MODIFIED="1496386939451"/>
+<node TEXT="Users Resource" ID="ID_1249588189" CREATED="1496386940219" MODIFIED="1496386944068"/>
+<node TEXT="Custom Actions for Project" ID="ID_1732461384" CREATED="1496387342946" MODIFIED="1496387349484"/>
+<node TEXT="User Authentication Resource (Swagger)" ID="ID_705192222" CREATED="1496386944666" MODIFIED="1496386953244"/>
+<node TEXT="Diagnostic Resource (Swagger)" ID="ID_567646242" CREATED="1496386953546" MODIFIED="1496386965123"/>
+<node TEXT="Bean Validation Provider (Jersey)" ID="ID_1351497525" CREATED="1496387045644" MODIFIED="1496387166908"/>
+<node TEXT="Custom Error Handling" ID="ID_629519929" CREATED="1496387055106" MODIFIED="1496387065332"/>
+<node TEXT="Custom Request Tracing" ID="ID_1017090056" CREATED="1496387065754" MODIFIED="1496387076947"/>
+<node TEXT="CORS for API (Jersey)" ID="ID_1978529191" CREATED="1496387077666" MODIFIED="1496387177859"/>
+<node TEXT="Caching for API (Ehcache)" ID="ID_301722148" CREATED="1496387113050" MODIFIED="1496387185004"/>
 </node>
-<node TEXT="Projects List" ID="ID_447801964" CREATED="1494871435081" MODIFIED="1495605054501" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="projects_list"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="depends" VALUE="ws_tasks.ws_api.project_entity"/>
+<node TEXT="Entities" ID="ID_1089108603" CREATED="1496387001794" MODIFIED="1496387004444">
+<node TEXT="Project" ID="ID_1563773623" CREATED="1496387008298" MODIFIED="1496387012955"/>
+<node TEXT="User" ID="ID_481424904" CREATED="1496387013882" MODIFIED="1496387015515"/>
 </node>
-<node TEXT="Login Page" ID="ID_43568668" CREATED="1494871360250" MODIFIED="1494922496957" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="login_page"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<node TEXT="Jobs" ID="ID_363074314" CREATED="1496386909922" MODIFIED="1496386914372">
+<node TEXT="Metrics Job (Quartz)" ID="ID_1120800176" CREATED="1496386970099" MODIFIED="1496387202820"/>
+<node TEXT="Projects Build Job (Spring Batch)" ID="ID_1937859432" CREATED="1496386975346" MODIFIED="1496387212299"/>
 </node>
-<node TEXT="Logout Action" ID="ID_1520309831" CREATED="1494871738709" MODIFIED="1494922506201" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<attribute NAME="task" VALUE="logout_action"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-</node>
-</node>
-<node TEXT="WS" ID="ID_387712182" CREATED="1494871165835" MODIFIED="1495263205027" COLOR="#00b439">
-<font NAME="SansSerif" SIZE="16"/>
-<edge STYLE="bezier" WIDTH="thin"/>
-<attribute NAME="task" VALUE="ws_tasks"/>
-<node TEXT="API" ID="ID_1003822119" CREATED="1495540151093" MODIFIED="1495540167265">
-<attribute NAME="task" VALUE="ws_api"/>
-<node TEXT="Project Entity" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_219896986" CREATED="1494871719829" MODIFIED="1495540873643">
-<font NAME="SansSerif"/>
-<attribute NAME="task" VALUE="project_entity"/>
-<attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-</node>
-<node TEXT="User Entity" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_132309505" CREATED="1495540108806" MODIFIED="1495540867487">
-<attribute NAME="task" VALUE="user_entity"/>
-<attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-</node>
-</node>
-<node TEXT="Jobs" ID="ID_73514992" CREATED="1495540154973" MODIFIED="1495540178577">
-<attribute NAME="task" VALUE="ws_jobs"/>
+<node TEXT="Git Client" ID="ID_775613092" CREATED="1496387215938" MODIFIED="1496387222922">
+<node TEXT="Clone Repository (JGit)" ID="ID_1507041409" CREATED="1496387226034" MODIFIED="1496387400370"/>
+<node TEXT="Update Repository (JGit)" ID="ID_1627139588" CREATED="1496387246258" MODIFIED="1496387408427"/>
+<node TEXT="Switch Branch (JGit)" ID="ID_1539479033" CREATED="1496387251538" MODIFIED="1496387413290"/>
 </node>
 </node>
 </node>
