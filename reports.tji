@@ -1,4 +1,4 @@
-taskreport "Issues" { 
+taskreport "Tasks" { 
   formats html, csv 
-  columns no, name, effort, resources, chart, start, end
+  columns no, priority, name, effort, resources, chart, start, end
 }

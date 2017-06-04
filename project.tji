@@ -1,0 +1,26 @@
+# Freeplane map "PW Planner"
+
+task pw_planner_identity "Identity Service" {
+
+    task task_1 "Login View (AngularJS)" {
+        allocate andreysaksonov
+        effort 1d
+    }
+
+    task task_2 "User Endpoint (Spring MVC)" {
+        allocate andreysaksonov
+        effort 4h
+    }
+
+    task task_3 "Logout View (AngularJS)" {
+        allocate andreysaksonov
+        effort 1d
+        depends !task_1,!task_2
+    }
+}
+
+task pw_planner_www "WWW" {
+}
+
+task pw_planner_api_v1 "API v1" {
+}

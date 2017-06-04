@@ -1,5 +1,5 @@
 # Freeplane map "PW Planner"
 
 resource andreysaksonov "Andrey Saksonov" {
-    limits { dailymax 1h weeklymax 6h }
+    limits { dailymax 3h weeklymax 12h }
 }

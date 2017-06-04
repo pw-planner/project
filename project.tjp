@@ -1,4 +1,4 @@
-project PWPLNR "PW Planner" "2.0" 2017-06-01 + 1y  { 
+project PWPLNR "PW Planner" "1.0" 2017-01-01 + 1y  { 
   timezone "Europe/Moscow"
   timeformat "%H:%M %d.%m.%Y" 
   shorttimeformat "%H:%M" 
@@ -6,8 +6,9 @@ project PWPLNR "PW Planner" "2.0" 2017-06-01 + 1y  {
   dailyworkinghours 8 
   yearlyworkingdays 247 
   weekstartsmonday
-  workinghours mon - fri 8:00 - 9:00, 20:00 - 23:00
-  workinghours sat, sun 8:00 - 12:00 
+  workinghours mon - fri 8:00 - 10:00, 21:00 - 23:00
+  workinghours sat 8:00 - 10:00
+  workinghours sun 8:00 - 10:00, 20:00 - 22:00
 }
 
 include "resources.tji"
