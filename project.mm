@@ -1,10 +1,9 @@
 <map version="freeplane 1.5.9">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="PW Planner" FOLDED="false" ID="ID_1283210132" CREATED="1494871137720" MODIFIED="1494872534046" COLOR="#000000">
+<node TEXT="PW Planner" FOLDED="false" ID="ID_1283210132" CREATED="1494871137720" MODIFIED="1501516941924" COLOR="#000000">
 <font NAME="SansSerif" SIZE="20"/>
-<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <hook NAME="MapStyle">
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -82,46 +81,94 @@
 </stylenode>
 </map_styles>
 </hook>
+<hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <node TEXT="TASKS" POSITION="right" ID="ID_161448055" CREATED="1494871949400" MODIFIED="1494872534003" COLOR="#0033ff">
 <font NAME="SansSerif" SIZE="18"/>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
-<node TEXT="Identity Service" ID="ID_459003274" CREATED="1496385832924" MODIFIED="1496476406738">
-<attribute NAME="task" VALUE="pw_planner_identity"/>
-<node TEXT="Login View (AngularJS)" ID="ID_548300958" CREATED="1496385936795" MODIFIED="1496478178676">
-<attribute NAME="task" VALUE="task_1"/>
+<node TEXT="Phase 1" ID="ID_1287488616" CREATED="1501515973638" MODIFIED="1501517078132">
+<attribute NAME="start" VALUE="2017-03-01"/>
+<attribute NAME="task" VALUE="phase_1"/>
+<node TEXT="WWW" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
+<attribute NAME="task" VALUE="pw_planner_www"/>
+<node TEXT="Zuul Proxy for API" ID="ID_1776364427" CREATED="1496386263348" MODIFIED="1501516525113">
+<attribute NAME="task" VALUE="task_22"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="4h"/>
+<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
+<attribute NAME="depends" VALUE="phase_1.pw_planner_api_v1.task_11"/>
+</node>
+<node TEXT="Resources Support" ID="ID_1689109852" CREATED="1496386428083" MODIFIED="1496558798235">
+<attribute NAME="task" VALUE="task_23"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
+<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
+<attribute NAME="depends" VALUE="!task_22"/>
+</node>
+<node TEXT="Users List" ID="ID_562692630" CREATED="1496386462330" MODIFIED="1496558142350">
+<attribute NAME="task" VALUE="task_24"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
+<attribute NAME="depends" VALUE="!task_23"/>
 </node>
-<node TEXT="User Endpoint (Spring MVC)" ID="ID_628217358" CREATED="1496385960067" MODIFIED="1496558848986">
-<attribute NAME="task" VALUE="task_2"/>
+<node TEXT="User View" ID="ID_1393606157" CREATED="1496386475635" MODIFIED="1496558151247">
+<attribute NAME="task" VALUE="task_25"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="3d"/>
-<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
+<attribute NAME="effort" VALUE="4h"/>
+<attribute NAME="depends" VALUE="!task_24"/>
 </node>
-<node TEXT="Logout View (AngularJS)" ID="ID_1335298630" CREATED="1496385977955" MODIFIED="1496478196247">
-<attribute NAME="task" VALUE="task_3"/>
+<node TEXT="Projects List" ID="ID_1826110896" CREATED="1496386442595" MODIFIED="1496558162302">
+<attribute NAME="task" VALUE="task_26"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
+<attribute NAME="depends" VALUE="!task_23"/>
+</node>
+<node TEXT="Project Form" ID="ID_1927222109" CREATED="1496386465275" MODIFIED="1496557817774">
+<attribute NAME="task" VALUE="task_27"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="depends" VALUE="!task_1,!task_2"/>
-<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
+<attribute NAME="depends" VALUE="!task_26"/>
 </node>
-<node TEXT="Logout Event Handler (ActiveMQ)" ID="ID_1641180442" CREATED="1496386098764" MODIFIED="1496558877177">
-<attribute NAME="task" VALUE="task_4"/>
+<node TEXT="Internationalization" ID="ID_1174753383" CREATED="1496386378411" MODIFIED="1496558188525">
+<attribute NAME="task" VALUE="task_28"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="4h"/>
+<attribute NAME="priority" VALUE="400" OBJECT="org.freeplane.features.format.FormattedNumber|400"/>
+</node>
+<node TEXT="Authentication Support" ID="ID_704629034" CREATED="1496386409395" MODIFIED="1496558218749">
+<attribute NAME="task" VALUE="task_29"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
+</node>
+<node TEXT="Login Page with My Account Link" ID="ID_1687919525" CREATED="1496386335011" MODIFIED="1496558376593">
+<attribute NAME="task" VALUE="task_30"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="depends" VALUE="!task_29"/>
+</node>
+<node TEXT="Logout Handler (ActiveMQ)" ID="ID_409105012" CREATED="1496386229107" MODIFIED="1496558290214">
+<attribute NAME="task" VALUE="task_31"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="depends" VALUE="!task_29"/>
+</node>
+<node TEXT="Custom Actions for Project" ID="ID_1872255384" CREATED="1496387359858" MODIFIED="1496558326942">
+<attribute NAME="task" VALUE="task_32"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
+<attribute NAME="depends" VALUE="!task_27"/>
 </node>
 </node>
-<node TEXT="API v1" ID="ID_709461948" CREATED="1496386692674" MODIFIED="1496386881937">
+<node TEXT="API v1" FOLDED="true" ID="ID_709461948" CREATED="1496386692674" MODIFIED="1496386881937">
 <attribute NAME="task" VALUE="pw_planner_api_v1"/>
-<node TEXT="Entities" ID="ID_1089108603" CREATED="1496387001794" MODIFIED="1496387004444">
+<node TEXT="Entities" ID="ID_1089108603" CREATED="1496387001794" MODIFIED="1501516426367">
 <node TEXT="Project Entity" ID="ID_1563773623" CREATED="1496387008298" MODIFIED="1496558856735">
 <attribute NAME="task" VALUE="task_5"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="4d"/>
 <attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
 </node>
-<node TEXT="User" ID="ID_481424904" CREATED="1496387013882" MODIFIED="1496555600192">
+<node TEXT="User" ID="ID_481424904" CREATED="1496387013882" MODIFIED="1501516426366">
 <attribute NAME="task" VALUE="task_6"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="2d"/>
@@ -191,7 +238,7 @@
 <attribute NAME="depends" VALUE="!task_11"/>
 </node>
 </node>
-<node TEXT="Jobs" ID="ID_363074314" CREATED="1496386909922" MODIFIED="1496386914372">
+<node TEXT="Jobs" FOLDED="true" ID="ID_363074314" CREATED="1496386909922" MODIFIED="1496386914372">
 <node TEXT="Metrics Job (Quartz)" ID="ID_1120800176" CREATED="1496386970099" MODIFIED="1496558885850">
 <attribute NAME="task" VALUE="task_17"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
@@ -203,7 +250,7 @@
 <attribute NAME="effort" VALUE="1d"/>
 </node>
 </node>
-<node TEXT="Git Client" ID="ID_775613092" CREATED="1496387215938" MODIFIED="1496387222922">
+<node TEXT="Git Client" FOLDED="true" ID="ID_775613092" CREATED="1496387215938" MODIFIED="1496387222922">
 <node TEXT="Clone Repository (JGit)" ID="ID_1507041409" CREATED="1496387226034" MODIFIED="1496557270262">
 <attribute NAME="task" VALUE="task_19"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
@@ -223,75 +270,32 @@
 </node>
 </node>
 </node>
-<node TEXT="WWW" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
-<attribute NAME="task" VALUE="pw_planner_www"/>
-<node TEXT="Zuul Proxy for API" ID="ID_1776364427" CREATED="1496386263348" MODIFIED="1496557704518">
-<attribute NAME="task" VALUE="task_22"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="4h"/>
-<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
-<attribute NAME="depends" VALUE="pw_planner_api_v1.task_11"/>
-</node>
-<node TEXT="Resources Support" ID="ID_1689109852" CREATED="1496386428083" MODIFIED="1496558798235">
-<attribute NAME="task" VALUE="task_23"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
-<attribute NAME="depends" VALUE="!task_22"/>
-</node>
-<node TEXT="Users List" ID="ID_562692630" CREATED="1496386462330" MODIFIED="1496558142350">
-<attribute NAME="task" VALUE="task_24"/>
+<node TEXT="Identity Service" FOLDED="true" ID="ID_459003274" CREATED="1496385832924" MODIFIED="1496476406738">
+<attribute NAME="task" VALUE="pw_planner_identity"/>
+<node TEXT="Login View (AngularJS)" ID="ID_548300958" CREATED="1496385936795" MODIFIED="1496478178676">
+<attribute NAME="task" VALUE="task_1"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="depends" VALUE="!task_23"/>
+<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
 </node>
-<node TEXT="User View" ID="ID_1393606157" CREATED="1496386475635" MODIFIED="1496558151247">
-<attribute NAME="task" VALUE="task_25"/>
+<node TEXT="User Endpoint (Spring MVC)" ID="ID_628217358" CREATED="1496385960067" MODIFIED="1496558848986">
+<attribute NAME="task" VALUE="task_2"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="4h"/>
-<attribute NAME="depends" VALUE="!task_24"/>
+<attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
 </node>
-<node TEXT="Projects List" ID="ID_1826110896" CREATED="1496386442595" MODIFIED="1496558162302">
-<attribute NAME="task" VALUE="task_26"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="depends" VALUE="!task_23"/>
-</node>
-<node TEXT="Project Form" ID="ID_1927222109" CREATED="1496386465275" MODIFIED="1496557817774">
-<attribute NAME="task" VALUE="task_27"/>
+<node TEXT="Logout View (AngularJS)" ID="ID_1335298630" CREATED="1496385977955" MODIFIED="1496478196247">
+<attribute NAME="task" VALUE="task_3"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="depends" VALUE="!task_26"/>
+<attribute NAME="depends" VALUE="!task_1,!task_2"/>
+<attribute NAME="priority" VALUE="900" OBJECT="org.freeplane.features.format.FormattedNumber|900"/>
 </node>
-<node TEXT="Internationalization" ID="ID_1174753383" CREATED="1496386378411" MODIFIED="1496558188525">
-<attribute NAME="task" VALUE="task_28"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="4h"/>
-<attribute NAME="priority" VALUE="400" OBJECT="org.freeplane.features.format.FormattedNumber|400"/>
-</node>
-<node TEXT="Authentication Support" ID="ID_704629034" CREATED="1496386409395" MODIFIED="1496558218749">
-<attribute NAME="task" VALUE="task_29"/>
+<node TEXT="Logout Event Handler (ActiveMQ)" ID="ID_1641180442" CREATED="1496386098764" MODIFIED="1496558877177">
+<attribute NAME="task" VALUE="task_4"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="priority" VALUE="800" OBJECT="org.freeplane.features.format.FormattedNumber|800"/>
 </node>
-<node TEXT="Login Page with My Account Link" ID="ID_1687919525" CREATED="1496386335011" MODIFIED="1496558376593">
-<attribute NAME="task" VALUE="task_30"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="depends" VALUE="!task_29"/>
-</node>
-<node TEXT="Logout Handler (ActiveMQ)" ID="ID_409105012" CREATED="1496386229107" MODIFIED="1496558290214">
-<attribute NAME="task" VALUE="task_31"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="1d"/>
-<attribute NAME="depends" VALUE="!task_29"/>
-</node>
-<node TEXT="Custom Actions for Project" ID="ID_1872255384" CREATED="1496387359858" MODIFIED="1496558326942">
-<attribute NAME="task" VALUE="task_32"/>
-<attribute NAME="allocate" VALUE="andreysaksonov"/>
-<attribute NAME="effort" VALUE="2d"/>
-<attribute NAME="depends" VALUE="!task_27"/>
 </node>
 </node>
 </node>
