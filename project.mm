@@ -298,6 +298,18 @@
 </node>
 </node>
 </node>
+<node TEXT="Phase 2" ID="ID_340461319" CREATED="1501517174418" MODIFIED="1501517198238">
+<attribute NAME="start" VALUE="2017-09-01"/>
+<attribute NAME="task" VALUE="phase_2"/>
+<node TEXT="Features" ID="ID_1453191676" CREATED="1501517215662" MODIFIED="1501517236544">
+<attribute NAME="task" VALUE="features"/>
+<node TEXT="View Project Builds" ID="ID_1970791799" CREATED="1501517238384" MODIFIED="1501517320934">
+<attribute NAME="task" VALUE="task_33"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="3d"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="RESOURCES" POSITION="left" ID="ID_1588082952" CREATED="1494922551680" MODIFIED="1494922592534" COLOR="#0033ff">
 <font NAME="SansSerif" SIZE="18"/>
