@@ -1,7 +1,7 @@
-### PW Planner Project Plan
-###### Version 0.1
+### PW Planner - TJ3 Project
+###### Version 1.0
 
-#### How-To
+#### Getting Started
 
 1. Install [Ruby 2.x](https://www.ruby-lang.org/en/downloads/)
 2. Install [TaskJuggler 3](http://taskjuggler.org/download.html): `gem install taskjuggler`
