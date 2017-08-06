@@ -1,5 +1,5 @@
-# Freeplane map "My Project"
+# Freeplane map "PW Planner"
 
-resource developer_1 "Developer 1" {
+resource andreysaksonov "Andrey Saksonov" {
     limits { dailymax 3h weeklymax 12h }
 }

@@ -1,4 +1,4 @@
-project MYPRJ "My Project" "1.0" 2017-01-01 + 1y  { 
+project PWPLNR "PW Planner" "1.0" 2017-01-01 + 1y  { 
   timezone "Europe/Moscow"
   timeformat "%H:%M %d.%m.%Y" 
   shorttimeformat "%H:%M" 
