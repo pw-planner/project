@@ -88,7 +88,7 @@
 <node TEXT="Phase 1" ID="ID_1287488616" CREATED="1501515973638" MODIFIED="1501517078132">
 <attribute NAME="start" VALUE="2017-03-01"/>
 <attribute NAME="task" VALUE="phase_1"/>
-<node TEXT="WWW" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
+<node TEXT="WWW" FOLDED="true" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
 <attribute NAME="task" VALUE="pw_planner_www"/>
 <node TEXT="Zuul Proxy for API" ID="ID_1776364427" CREATED="1496386263348" MODIFIED="1501516525113">
 <attribute NAME="task" VALUE="task_22"/>
@@ -159,7 +159,7 @@
 <attribute NAME="depends" VALUE="!task_27"/>
 </node>
 </node>
-<node TEXT="API v1" FOLDED="true" ID="ID_709461948" CREATED="1496386692674" MODIFIED="1496386881937">
+<node TEXT="API v1" ID="ID_709461948" CREATED="1496386692674" MODIFIED="1496386881937">
 <attribute NAME="task" VALUE="pw_planner_api_v1"/>
 <node TEXT="Entities" ID="ID_1089108603" CREATED="1496387001794" MODIFIED="1501516426367">
 <node TEXT="Project Entity" ID="ID_1563773623" CREATED="1496387008298" MODIFIED="1496558856735">
@@ -214,7 +214,7 @@
 <attribute NAME="effort" VALUE="1d"/>
 <attribute NAME="depends" VALUE="!task_10"/>
 </node>
-<node TEXT="User Authentication Resource (Swagger)" ID="ID_705192222" CREATED="1496386944666" MODIFIED="1496557140383">
+<node TEXT="User Authentication Resource" ID="ID_705192222" CREATED="1496386944666" MODIFIED="1502088229421">
 <attribute NAME="task" VALUE="task_13"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="1d"/>
@@ -298,15 +298,52 @@
 </node>
 </node>
 </node>
-<node TEXT="Phase 2" ID="ID_340461319" CREATED="1501517174418" MODIFIED="1501517198238">
+<node TEXT="Phase 2" FOLDED="true" ID="ID_340461319" CREATED="1501517174418" MODIFIED="1501517198238">
 <attribute NAME="start" VALUE="2017-09-01"/>
 <attribute NAME="task" VALUE="phase_2"/>
-<node TEXT="Features" ID="ID_1453191676" CREATED="1501517215662" MODIFIED="1501517236544">
+<node TEXT="Features" ID="ID_1453191676" CREATED="1501517215662" MODIFIED="1502086847130">
 <attribute NAME="task" VALUE="features"/>
-<node TEXT="View Project Builds" ID="ID_1970791799" CREATED="1501517238384" MODIFIED="1501517320934">
+<node TEXT="View Project Builds" ID="ID_1970791799" CREATED="1501517238384" MODIFIED="1502087647473">
 <attribute NAME="task" VALUE="task_33"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="800"/>
+</node>
+<node TEXT="Localize Dashboard Page" ID="ID_812431395" CREATED="1502086848024" MODIFIED="1502087637408">
+<attribute NAME="task" VALUE="task_34"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="4h"/>
+<attribute NAME="priority" VALUE="700"/>
+</node>
+<node TEXT="Add Builds Schedule Fields" ID="ID_1632879428" CREATED="1502086899942" MODIFIED="1502088164013">
+<attribute NAME="task" VALUE="task_35"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="1d"/>
+<attribute NAME="priority" VALUE="600"/>
+</node>
+<node TEXT=" Parallel Quartz Jobs for User Projects" ID="ID_17200403" CREATED="1502086958417" MODIFIED="1502087966677">
+<attribute NAME="task" VALUE="task_36"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
+<attribute NAME="depends" VALUE="!task_35"/>
+</node>
+<node TEXT="Integrate Service Discovery (Eureka)" ID="ID_1743196318" CREATED="1502087208457" MODIFIED="1502088133639">
+<attribute NAME="task" VALUE="task_37"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="400" OBJECT="org.freeplane.features.format.FormattedNumber|400"/>
+</node>
+<node TEXT="Integrate Spring Cloud Config" ID="ID_1679101895" CREATED="1502087338607" MODIFIED="1502088187100">
+<attribute NAME="task" VALUE="task_38"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="400"/>
+</node>
+<node TEXT="Setup Docker Swarm" ID="ID_44702037" CREATED="1502087452485" MODIFIED="1502087984211">
+<attribute NAME="task" VALUE="task_39"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="300"/>
 </node>
 </node>
 </node>

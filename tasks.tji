@@ -126,7 +126,7 @@ task phase_1 "Phase 1" {
                 depends !task_10
             }
 
-            task task_13 "User Authentication Resource (Swagger)" {
+            task task_13 "User Authentication Resource" {
                 allocate andreysaksonov
                 effort 1d
                 depends !task_10
@@ -213,6 +213,43 @@ task phase_2 "Phase 2" {
         task task_33 "View Project Builds" {
             allocate andreysaksonov
             effort 3d
+            priority 800
+        }
+
+        task task_34 "Localize Dashboard Page" {
+            allocate andreysaksonov
+            effort 4h
+            priority 700
+        }
+
+        task task_35 "Add Builds Schedule Fields" {
+            allocate andreysaksonov
+            effort 1d
+            priority 600
+        }
+
+        task task_36 " Parallel Quartz Jobs for User Projects" {
+            allocate andreysaksonov
+            effort 2d
+            depends !task_35
+        }
+
+        task task_37 "Integrate Service Discovery (Eureka)" {
+            allocate andreysaksonov
+            effort 3d
+            priority 400
+        }
+
+        task task_38 "Integrate Spring Cloud Config" {
+            allocate andreysaksonov
+            effort 3d
+            priority 400
+        }
+
+        task task_39 "Setup Docker Swarm" {
+            allocate andreysaksonov
+            effort 3d
+            priority 300
         }
     }
 }
