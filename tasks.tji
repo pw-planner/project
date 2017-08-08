@@ -251,5 +251,11 @@ task phase_2 "Phase 2" {
             effort 3d
             priority 300
         }
+
+        task task_40 "Send Email Notifications via SendGrid" {
+            allocate andreysaksonov
+            effort 2d
+            priority 300
+        }
     }
 }

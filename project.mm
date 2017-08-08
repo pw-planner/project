@@ -3,7 +3,7 @@
 <node TEXT="PW Planner" FOLDED="false" ID="ID_1283210132" CREATED="1494871137720" MODIFIED="1501516941924" COLOR="#000000">
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
+    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -85,7 +85,7 @@
 <node TEXT="TASKS" POSITION="right" ID="ID_161448055" CREATED="1494871949400" MODIFIED="1494872534003" COLOR="#0033ff">
 <font NAME="SansSerif" SIZE="18"/>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
-<node TEXT="Phase 1" ID="ID_1287488616" CREATED="1501515973638" MODIFIED="1501517078132">
+<node TEXT="Phase 1" FOLDED="true" ID="ID_1287488616" CREATED="1501515973638" MODIFIED="1501517078132">
 <attribute NAME="start" VALUE="2017-03-01"/>
 <attribute NAME="task" VALUE="phase_1"/>
 <node TEXT="WWW" FOLDED="true" ID="ID_1405776802" CREATED="1496386178715" MODIFIED="1496386690266">
@@ -298,7 +298,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Phase 2" FOLDED="true" ID="ID_340461319" CREATED="1501517174418" MODIFIED="1501517198238">
+<node TEXT="Phase 2" ID="ID_340461319" CREATED="1501517174418" MODIFIED="1501517198238">
 <attribute NAME="start" VALUE="2017-09-01"/>
 <attribute NAME="task" VALUE="phase_2"/>
 <node TEXT="Features" ID="ID_1453191676" CREATED="1501517215662" MODIFIED="1502086847130">
@@ -343,6 +343,12 @@
 <attribute NAME="task" VALUE="task_39"/>
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="3d"/>
+<attribute NAME="priority" VALUE="300"/>
+</node>
+<node TEXT="Send Email Notifications via SendGrid" ID="ID_1621333102" CREATED="1502216718744" MODIFIED="1502216807381">
+<attribute NAME="task" VALUE="task_40"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="priority" VALUE="300"/>
 </node>
 </node>
