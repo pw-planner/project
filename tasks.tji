@@ -257,5 +257,11 @@ task phase_2 "Phase 2" {
             effort 2d
             priority 300
         }
+
+        task task_41 "Integrate Spring Cloud Sleuth (Zipkin Server)" {
+            allocate andreysaksonov
+            effort 2d
+            priority 400
+        }
     }
 }

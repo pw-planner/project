@@ -3,7 +3,7 @@
 <node TEXT="PW Planner" FOLDED="false" ID="ID_1283210132" CREATED="1494871137720" MODIFIED="1501516941924" COLOR="#000000">
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="MapStyle">
-    <properties fit_to_viewport="false;" show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false;"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -350,6 +350,12 @@
 <attribute NAME="allocate" VALUE="andreysaksonov"/>
 <attribute NAME="effort" VALUE="2d"/>
 <attribute NAME="priority" VALUE="300"/>
+</node>
+<node TEXT="Integrate Spring Cloud Sleuth (Zipkin Server)" ID="ID_159033776" CREATED="1503293401127" MODIFIED="1503294136721">
+<attribute NAME="task" VALUE="task_41"/>
+<attribute NAME="allocate" VALUE="andreysaksonov"/>
+<attribute NAME="effort" VALUE="2d"/>
+<attribute NAME="priority" VALUE="400"/>
 </node>
 </node>
 </node>
